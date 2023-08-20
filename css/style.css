@@ -53,6 +53,7 @@ h3 {
 */
 
 .h-three-style {
+  color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: calc(24 / 20);
