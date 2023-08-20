@@ -8,6 +8,7 @@ body {
   background-color: #fff;
 }
 
+/*
 h1 {
   color: white;
   font-weight: 700;
@@ -15,7 +16,7 @@ h1 {
   line-height: calc(60 / 56);
   text-align: center;
 }
-
+*/
 h2 {
   color: #2e2f42;
   font-size: 36px;
@@ -80,6 +81,11 @@ ol {
 }
 
 .h1-style {
+  color: white;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: calc(60 / 56);
+  text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
