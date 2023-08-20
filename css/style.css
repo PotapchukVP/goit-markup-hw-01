@@ -79,14 +79,26 @@ ol {
   background-color: #2e2f42;
 }
 
+.h1-style {
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
 .order-service-button {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+  cursor: pointer;
 
   background: #4d5ae5;
+}
+
+.order-service-button:hover,
+.order-service-button:focus {
+  background-color: #404bbf;
 }
 
 .our-team-section {
