@@ -43,6 +43,13 @@ h2 {
   letter-spacing: 0.01em;
 }
 
+.h-two-style .h-team-style {
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
 /*
 h3 {
   font-size: 20px;
