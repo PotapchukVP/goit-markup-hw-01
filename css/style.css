@@ -35,7 +35,7 @@ h2 {
   letter-spacing: 0.01em;
 } 
 */
-.h-two-style .h-team-style {
+.h-two-style {
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
@@ -44,6 +44,8 @@ h2 {
 }
 
 .h-team-style {
+  color: #2e2f42;
+  font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
@@ -136,6 +138,10 @@ ol {
 
 .our-team-section {
   background-color: #f4f4fd;
+}
+
+.team-list-background {
+  background-color: #ffffff;
 }
 
 .footer-section {
