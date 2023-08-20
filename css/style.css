@@ -55,9 +55,13 @@ ol {
 .logo-text-color {
   color: #2e2f42;
 }
-.nav-link {
+.nav-link > a {
   color: #2e2f42;
   font-weight: 500;
+}
+
+.nav-link > a:hover .nav-link > a:focus {
+  color: #404bbf;
 }
 
 .nav-contacts {
