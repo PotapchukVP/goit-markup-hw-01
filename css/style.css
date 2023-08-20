@@ -61,9 +61,18 @@ ol {
 }
 
 .nav-contacts {
+  font-style: normal;
+}
+
+.nav-contacts-list .contact-link {
   color: #434455;
   font-size: 16px;
   line-height: calc(24 / 16); /* 150% */
+}
+
+.nav-contacts-list .contact-link:hover,
+.nav-contacts-list .contact-link:focus {
+  color: #404bbf;
 }
 
 .hero-section {
