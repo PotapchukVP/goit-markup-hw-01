@@ -1,10 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   color: #434455;
-  font-size: 16px;
-  line-height: calc(24 / 16); /* 150% */
-  letter-spacing: 0.02em;
   background-color: #fff;
 }
 
@@ -40,7 +36,7 @@ h2 {
   font-size: 36px;
   font-weight: 700;
   line-height: calc(24 / 20); /* 120% */
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 
 .h-team-style {
@@ -70,7 +66,10 @@ h3 {
 }
 
 .p-style {
+  font-weight: 400;
   font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
 }
 
 ul,
@@ -86,6 +85,7 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .logo-text-color {
@@ -109,6 +109,7 @@ ol {
   color: #434455;
   font-size: 16px;
   line-height: calc(24 / 16); /* 150% */
+  text-decoration: none;
 }
 
 .nav-contacts-list .contact-link:hover,
