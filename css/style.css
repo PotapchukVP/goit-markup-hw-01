@@ -96,6 +96,8 @@ ol {
   text-decoration: none;
   color: #2e2f42;
   font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
 }
 .nav-link .link:hover,
 .nav-link .link:focus {
@@ -109,6 +111,7 @@ ol {
   color: #434455;
   font-size: 16px;
   line-height: calc(24 / 16); /* 150% */
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 
