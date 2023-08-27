@@ -1,0 +1,158 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #434455;
+  font-size: 16px;
+  line-height: calc(24 / 16); /* 150% */
+  letter-spacing: 0.02em;
+  background-color: #fff;
+}
+
+/*
+h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: calc(60 / 56);
+  text-align: center;
+}
+*/
+.h-one-style {
+  color: white;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: calc(60 / 56);
+  text-align: center;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+/*
+h2 {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(24 / 20); 
+  letter-spacing: 0.01em;
+} 
+*/
+.h-two-style {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(24 / 20); /* 120% */
+  letter-spacing: 0.01em;
+}
+
+.h-team-style {
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/*
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+}
+*/
+
+.h-three-style {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+}
+
+.p-style {
+  font-size: 16px;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.logo-text {
+  font-family: "Raleway", sans-serif;
+  color: #4d5ae5;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  text-transform: uppercase;
+}
+
+.logo-text-color {
+  color: #2e2f42;
+}
+
+.nav-link .link {
+  text-decoration: none;
+  color: #2e2f42;
+  font-weight: 500;
+}
+.nav-link .link:hover,
+.nav-link .link:focus {
+  color: #404bbf;
+}
+.nav-contacts {
+  font-style: normal;
+}
+
+.nav-contacts-list .contact-link {
+  color: #434455;
+  font-size: 16px;
+  line-height: calc(24 / 16); /* 150% */
+}
+
+.nav-contacts-list .contact-link:hover,
+.nav-contacts-list .contact-link:focus {
+  color: #404bbf;
+}
+
+.hero-section {
+  background-color: #2e2f42;
+}
+
+.order-service-button {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  background: #4d5ae5;
+}
+
+.order-service-button:hover,
+.order-service-button:focus {
+  background-color: #404bbf;
+}
+
+.our-team-section {
+  background-color: #f4f4fd;
+}
+
+.team-list-background {
+  background-color: #ffffff;
+}
+
+.footer-section {
+  background-color: #2e2f42;
+}
+
+.footer-section > p {
+  color: #f4f4fd;
+}
+
+.footer-section .logo-text-color {
+  color: #f4f4fd;
+}
