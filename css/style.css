@@ -43,7 +43,7 @@ img {
   display: flex;
   min-height: 72px;
   align-items: center;
-  border-bottom: 5px solid greenyellow; /*#e7e9fc;*/
+  border-bottom: 1px solid #e7e9fc; /*  greenyellow;*/
 }
 
 .h-one-style {
@@ -124,8 +124,6 @@ img {
 
 .nav-link {
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .nav-link .link {
@@ -136,6 +134,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: calc((100% - 40px) / 3);
+
+  padding: 24px 0 24px 0;
 }
 
 .nav-link .link:hover,
@@ -161,6 +161,8 @@ img {
   line-height: calc(24 / 16); /* 150% */
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  padding: 24px 0 24px 0;
 }
 
 .nav-contacts-list .contact-link:hover,
