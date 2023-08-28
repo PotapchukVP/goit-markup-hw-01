@@ -27,20 +27,21 @@ ol {
 }
 
 img {
+  display: block;
 }
 
 .container {
   display: flex;
   max-width: 1158px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .container .container-header {
   display: flex;
   min-height: 72px;
   align-items: center;
-  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .h-one-style {
@@ -119,6 +120,8 @@ img {
 
 .nav-link {
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-link .link {
