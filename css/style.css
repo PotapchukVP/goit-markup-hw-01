@@ -1,6 +1,8 @@
+/*
 * {
   outline: 2px solid red;
 }
+*/
 
 body {
   font-family: "Roboto", sans-serif;
@@ -41,7 +43,7 @@ img {
   display: flex;
   min-height: 72px;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 5px solid greenyellow; /*#e7e9fc;*/
 }
 
 .h-one-style {
@@ -52,6 +54,8 @@ img {
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
+
+  max-width: 496px;
 }
 
 .h-two-style {
@@ -167,7 +171,7 @@ img {
 .hero-section {
   background-color: #2e2f42;
   height: 600px;
-  padding: 120px 0 120px 0;
+  padding: 188px 0 188px 0;
 }
 
 .hero-container {
@@ -194,6 +198,7 @@ img {
   padding: 16px 32px 16px 32px;
   max-width: fit-content;
   max-height: fit-content;
+  min-width: 169px;
 
   margin-top: 48px;
 }
@@ -232,7 +237,7 @@ img {
   gap: 8px;
 }
 
-portfolio-section {
+.portfolio-section {
   padding: 120px 0 120px 0;
 }
 
