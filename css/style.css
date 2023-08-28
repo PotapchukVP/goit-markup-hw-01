@@ -234,7 +234,7 @@ img {
   gap: 24px;
 }
 
-.advantage-list:first-child {
+.advantage-list-first-item {
   width: calc((100% - 72px) / 4);
 }
 
