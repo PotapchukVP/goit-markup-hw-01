@@ -1,22 +1,48 @@
+* {
+  outline: 2px solid red;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   color: #434455;
-  font-size: 16px;
-  line-height: calc(24 / 16); /* 150% */
-  letter-spacing: 0.02em;
   background-color: #fff;
 }
 
-/*
-h1 {
-  color: white;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: calc(60 / 56);
-  text-align: center;
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-*/
+
+ul,
+ol {
+  display: flex;
+  text-justify: 0;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+}
+
+.container {
+  display: flex;
+  max-width: 1158px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container .container-header {
+  display: flex;
+  min-height: 72px;
+  align-items: center;
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+}
+
 .h-one-style {
   color: white;
   font-weight: 700;
@@ -26,21 +52,14 @@ h1 {
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
-/*
-h2 {
-  color: #2e2f42;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: calc(24 / 20); 
-  letter-spacing: 0.01em;
-} 
-*/
+
 .h-two-style {
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
   line-height: calc(24 / 20); /* 120% */
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .h-team-style {
@@ -50,16 +69,18 @@ h2 {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+
+  margin-bottom: 72px;
 }
 
-/*
-h3 {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
+.our-team-list {
+  align-items: center;
+  gap: 24px;
 }
-*/
+
+.container .our-team-container {
+  flex-direction: column;
+}
 
 .h-three-style {
   color: #2e2f42;
@@ -67,15 +88,17 @@ h3 {
   font-weight: 500;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
+
+  margin-top: 32px;
 }
 
 .p-style {
+  font-weight: 400;
   font-size: 16px;
-}
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
 
-ul,
-ol {
-  list-style-type: none;
+  margin-top: 8px;
 }
 
 .logo-text {
@@ -85,31 +108,52 @@ ol {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
-
   text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 76px;
 }
 
 .logo-text-color {
   color: #2e2f42;
 }
 
+.nav-link {
+  gap: 40px;
+}
+
 .nav-link .link {
   text-decoration: none;
   color: #2e2f42;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: calc((100% - 40px) / 3);
 }
+
 .nav-link .link:hover,
 .nav-link .link:focus {
   color: #404bbf;
 }
+
 .nav-contacts {
   font-style: normal;
+  margin-left: 332px;
+}
+
+.nav-contacts-list {
+  display: flex;
+  width: auto;
+  gap: 40px;
+  align-items: center;
 }
 
 .nav-contacts-list .contact-link {
   color: #434455;
   font-size: 16px;
   line-height: calc(24 / 16); /* 150% */
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .nav-contacts-list .contact-link:hover,
@@ -119,6 +163,13 @@ ol {
 
 .hero-section {
   background-color: #2e2f42;
+  height: 600px;
+  padding: 120px 0 120px 0;
+}
+
+.hero-container {
+  flex-direction: column;
+  align-items: center;
 }
 
 .order-service-button {
@@ -128,8 +179,20 @@ ol {
   font-weight: 500;
   line-height: calc(24 / 16);
   letter-spacing: 0.04em;
+
   cursor: pointer;
   background: #4d5ae5;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  box-shadow: none;
+
+  padding: 16px 32px 16px 32px;
+  max-width: fit-content;
+  max-height: fit-content;
+
+  margin-top: 48px;
 }
 
 .order-service-button:hover,
@@ -137,20 +200,47 @@ ol {
   background-color: #404bbf;
 }
 
+.advantage-section {
+  padding: 120px 0 120px 0;
+}
+
+.advantage-list {
+  gap: 24px;
+}
+.advantage-list .p-style {
+  margin-top: 8px;
+}
+
 .our-team-section {
   background-color: #f4f4fd;
+  padding: 120px 0 120px 0;
+}
+
+.our-team-list .p-style {
+  margin-bottom: 32px;
 }
 
 .team-list-background {
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+portfolio-section {
+  padding: 120px 0 120px 0;
 }
 
 .footer-section {
   background-color: #2e2f42;
+  height: 312px;
 }
 
 .footer-section > p {
   color: #f4f4fd;
+  padding: 120px 0 120px 0;
 }
 
 .footer-section .logo-text-color {
