@@ -34,7 +34,7 @@ img {
 
 .container {
   display: flex;
-  max-width: 1158px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -43,7 +43,10 @@ img {
   display: flex;
   min-height: 72px;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc; /*  greenyellow;*/
+}
+
+.border-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .h-one-style {
