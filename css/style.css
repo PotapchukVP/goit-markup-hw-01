@@ -75,6 +75,7 @@ img {
   font-weight: 500;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .p-style {
@@ -271,7 +272,6 @@ img {
 
 .our-team-list .p-style {
   text-align: center;
-  margin-top: 8px;
 }
 .portfolio-section {
   padding: 120px 0 120px 0;
