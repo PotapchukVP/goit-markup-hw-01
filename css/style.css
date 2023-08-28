@@ -218,13 +218,18 @@ img {
   margin-bottom: 8px;
 }
 
-.container .our-team-container {
-  flex-direction: column;
-}
-
 .our-team-section {
   background-color: #f4f4fd;
   padding: 120px 0 120px 0;
+}
+
+.our-team-section .container {
+  display: flex;
+  flex-direction: column;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  align-items: center;
 }
 
 .team-list-background {
