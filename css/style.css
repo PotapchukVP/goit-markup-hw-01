@@ -1,5 +1,5 @@
 * {
-  outline: 2px solid red;
+  outline: 1px solid greenyellow;
 }
 
 body {
@@ -75,9 +75,6 @@ img {
   font-weight: 500;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
-
-  margin-top: 32px;
-  margin-bottom: 8px;
 }
 
 .p-style {
@@ -221,13 +218,13 @@ img {
   margin-bottom: 8px;
 }
 
+.container .our-team-container {
+  flex-direction: column;
+}
+
 .our-team-section {
   background-color: #f4f4fd;
   padding: 120px 0 120px 0;
-}
-
-.container .our-team-container {
-  flex-direction: column;
 }
 
 .team-list-background {
@@ -236,16 +233,10 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
-
-/*
-.our-team-list .p-style {
-  text-align: center;
-}
-*/
 
 .person-card {
   text-align: center;
@@ -270,6 +261,12 @@ img {
 
 .out-team-list .h-three-style {
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.our-team-list .p-style {
+  text-align: center;
+  margin-top: 8px;
 }
 .portfolio-section {
   padding: 120px 0 120px 0;
