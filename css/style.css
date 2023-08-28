@@ -234,8 +234,8 @@ img {
   gap: 24px;
 }
 
-.advantage-list-first-item {
-  width: calc((100% - 72px) / 4);
+.advantage-list-item {
+  flex-basis: calc((100% - 3 * 24px));
 }
 
 .advantage-list .h-three-style {
