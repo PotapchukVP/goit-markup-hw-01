@@ -466,6 +466,7 @@ img {
 .social-media-links .p-style {
   font-weight: 500;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .footer-section .container {
@@ -480,7 +481,7 @@ img {
 
 .social-media-links .social-link-list {
   gap: 16px;
-  margin-top: 16px;
+  margin-top: 0;
 }
 
 .footer-section .social-icon-background:hover,
