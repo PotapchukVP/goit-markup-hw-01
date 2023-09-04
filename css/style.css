@@ -197,7 +197,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpeg);
+    url("/images/people-office.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -458,6 +458,10 @@ img {
 .social-media-links .social-icon {
   width: 24px;
   height: 24px;
+}
+
+.social-media-links .social-link-list {
+  margin-top: 16px;
 }
 
 .social-media-links .social-link-list {
