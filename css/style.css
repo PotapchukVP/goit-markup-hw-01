@@ -334,7 +334,9 @@ img {
 }
 
 .social-link-item {
-  flex-basis: calc((100% - 3 * 24px));
+  /*  flex-basis: calc((100% - 3 * 24px));*/
+  width: 40px;
+  height: 40px;
 }
 
 .social-icon-background {
@@ -357,7 +359,7 @@ img {
 
 .social-icon-background:hover,
 .social-icon-background:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 /**********************************PORTFOLIO SECTION ******************************/
@@ -379,6 +381,7 @@ img {
 .portfolio-card {
   width: calc((100% - 48px) / 3);
   border: 1px solid #e7e9fc;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-description {
