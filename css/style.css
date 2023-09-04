@@ -340,7 +340,7 @@ img {
 }
 
 .social-icon-background {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: #4d5ae5;
@@ -405,7 +405,7 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px;
 
   background-color: #4d5ae5;
   transform: translateY(100%);
@@ -460,9 +460,10 @@ img {
   margin-left: 120px;
 }
 
-.socual-media-links .p-style {
+.social-media-links .p-style {
   font-weight: 500;
   margin-bottom: 16px;
+  color: #ffffff;
 }
 
 .footer-section .container {
@@ -475,9 +476,14 @@ img {
 }
 
 .social-media-links .social-link-list {
+  gap: 16px;
   margin-top: 16px;
 }
 
 .social-media-links .social-link-list {
   margin-top: 16px;
+}
+.footer-section .social-icon-background:hover,
+.footer-section .social-icon-background:focus {
+  background-color: #31d0aa;
 }
