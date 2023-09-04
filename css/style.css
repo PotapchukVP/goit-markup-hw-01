@@ -453,11 +453,11 @@ img {
 
 .about-webstudio {
   display: block;
+  margin-right: 120px;
 }
 
 .social-media-links {
   display: block;
-  margin-left: 120px;
 }
 
 .social-media-links .p-style {
@@ -468,6 +468,7 @@ img {
 
 .footer-section .container {
   display: flex;
+  align-items: baseline;
 }
 
 .social-media-links .social-icon {
@@ -477,12 +478,8 @@ img {
 
 .social-media-links .social-link-list {
   gap: 16px;
-  margin-top: 16px;
 }
 
-.social-media-links .social-link-list {
-  margin-top: 16px;
-}
 .footer-section .social-icon-background:hover,
 .footer-section .social-icon-background:focus {
   background-color: #31d0aa;
