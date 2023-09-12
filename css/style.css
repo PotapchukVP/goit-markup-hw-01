@@ -627,12 +627,12 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-style {
+.close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button:hover .close-icon,
-.close-button:focus .close-icon {
+.close-button:hover + .close-icon,
+.close-button:focus + .close-icon {
   fill: #ffffff;
   border: none;
 }
