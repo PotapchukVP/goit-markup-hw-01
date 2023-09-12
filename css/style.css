@@ -435,6 +435,7 @@ img {
 
 .footer-section .p-style {
   color: #f4f4fd;
+  width: 264px;
 }
 
 .footer-section .footer-logo {
@@ -502,47 +503,55 @@ img {
   margin-bottom: 16px;
 }
 
+.subscribe-items {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-email-label {
+}
+
 .subscribe-input {
   width: 264px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background: #2e2f42;
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   color: #ffffff;
   font-size: 12px;
   font-weight: 400;
-  line-height: 2;
-  letter-spacing: 0.04px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-.subscribe-items {
+.subscribe-input::placeholder {
+  color: #ffffff;
 }
 
 .subscribe-button {
-  display: inline-flex;
-  width: 164px;
+  display: flex;
+  min-width: 165px;
   height: 40px;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto", sans-serif;
 
-  border: 0;
+  border: none;
   border-radius: 4px;
   background: #4d5ae5;
 
   color: #ffffff;
-  text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
-  margin-left: 24px;
 
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -590,7 +599,8 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button {
@@ -619,8 +629,8 @@ img {
 .close-button:hover,
 .close-button:focus {
   background-color: #404bbf;
-  fill: #ffffff;
   border: none;
+  fill: #ffffff;
 }
 
 .form-text {
@@ -635,6 +645,7 @@ img {
 }
 
 .form-label-style {
+  display: block;
   color: #8e8f99;
   font-size: 12px;
   font-weight: 400;
@@ -659,20 +670,22 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding-left: 38px;
-  transition: border-color 250ms ease-out;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-field:focus {
   border-color: #4d5ae5;
-  outline: transparent;
 }
 
 .input-field-icon {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 16px;
+  transform: translateY(-50%);
   fill: #2e2f42;
-  transition: fill 250ms ease-out;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-field:focus + .input-field-icon {
@@ -689,12 +702,14 @@ img {
   padding: 16px 8px 16px 8px;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
+  background-color: transparent;
   resize: none;
+  outline: transparent;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  transition: border-color 250ms ease-out;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment-form-field::placeholder {
@@ -703,7 +718,6 @@ img {
 
 .comment-form-field:focus {
   border-color: #4d5ae5;
-  outline: transparent;
 }
 
 .terms-wrapper {
@@ -713,7 +727,7 @@ img {
   color: #8e8f99;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
 }
 
@@ -735,8 +749,8 @@ img {
 }
 
 .input-checkbox:checked + .term-conditions-label > .own-checkbox-form {
-  background-color: blue;
-  fill: #ffffff;
+  background-color: #404bbf;
+  fill: #f4f4fd;
   border: none;
 }
 
