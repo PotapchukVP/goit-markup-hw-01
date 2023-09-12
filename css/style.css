@@ -686,6 +686,9 @@ img {
 }
 
 .input-form-wrapper:focus {
+}
+
+.input-field:focus {
   border-color: #4d5ae5;
 }
 
