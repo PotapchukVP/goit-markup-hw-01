@@ -1,0 +1,80 @@
+/**********************************TEAM SECTION ******************************/
+.our-team-section {
+  background-color: #f4f4fd;
+  padding: 96px 0 96px 0;
+}
+
+.team-list-background {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+  /* flex-basis: calc((100% - 72px) / 4); */
+  border-radius: 0px 0px 4px 4px;
+}
+
+.person-card {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.h-team-style {
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  margin-bottom: 72px;
+}
+
+.our-team-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+}
+
+.out-team-list .h-three-style {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.our-team-list .p-style {
+  text-align: center;
+}
+
+/* =============================START 320px============================== */
+@media screen and (max-width: 767px) {
+}
+/* =============================END 320px================================ */
+
+/* =============================TABLET=================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .our-team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+/* =============================ЕND TABLET=============================== */
+
+/* =============================DESKTOP=================================== */
+@media screen and (min-width: 1158px) {
+  .our-team-section {
+    padding: 120px 0 120px 0;
+  }
+
+  .our-team-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+/* =============================END DESKTOP=============================== */

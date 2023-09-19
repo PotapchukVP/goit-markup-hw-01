@@ -1,0 +1,242 @@
+/**********************************FOOTER SECTION ******************************/
+.footer-section {
+  background-color: #2e2f42;
+  padding: 96px 0 96px 0;
+}
+
+.footer-section .container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: baseline; */
+}
+
+.footer-section .p-style {
+  color: #f4f4fd;
+}
+
+.footer-section .footer-logo {
+  margin-bottom: 17px;
+  font-family: "Raleway", sans-serif;
+  color: #4d5ae5;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-section .logo-text-color {
+  color: #f4f4fd;
+}
+
+.about-webstudio {
+  display: block;
+  text-align: center;
+  /* margin-bottom: 72px; */
+}
+
+.social-media-links {
+  display: block;
+}
+
+.social-media-links .p-style {
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.social-media-links .social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.social-media-links .social-link-list {
+  gap: 16px;
+  margin-top: 0;
+}
+
+.footer-section .social-icon-background:hover,
+.footer-section .social-icon-background:focus {
+  background-color: #31d0aa;
+}
+
+.subscribe-section .p-style {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.subscribe-items {
+  display: block;
+  text-align: center;
+}
+
+.subscribe-email-label {
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.subscribe-input::placeholder {
+  color: #ffffff;
+}
+
+.subscribe-button {
+  display: flex;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+
+  border: none;
+  border-radius: 4px;
+  background: #4d5ae5;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #404bbf;
+}
+
+.plane-icon {
+  margin-left: 16px;
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+/* =============================START 320px============================== */
+@media screen and (max-width: 767px) {
+  .social-media-links .p-style {
+    font-weight: 500;
+    color: #ffffff;
+    width: 288px;
+  }
+
+  .about-webstudio {
+    margin-bottom: 72px;
+  }
+  .about-webstudio .p-style {
+    text-align: left;
+  }
+
+  .social-media-links {
+    display: block;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+  .subscribe-section {
+    display: block;
+    text-align: center;
+  }
+
+  .subscribe-button {
+    margin: auto;
+    margin-top: 16px;
+  }
+
+  .subscribe-input {
+    width: 288px;
+  }
+}
+/* =============================END 320px================================ */
+
+/* =============================TABLET=================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-section .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    padding-left: 108px;
+    padding-right: 164px;
+  }
+
+  .about-webstudio {
+    display: block;
+    text-align: left;
+  }
+  .about-webstudio .p-style {
+    text-align: left;
+    width: 264px;
+  }
+
+  .social-media-links {
+    display: block;
+  }
+
+  .subscribe-items {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+/* =============================ЕND TABLET=============================== */
+
+/* =============================DESKTOP=================================== */
+@media screen and (min-width: 1158px) {
+  .footer-section {
+    padding: 100px 0 100px 0;
+  }
+
+  .footer-section .container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .about-webstudio {
+    display: block;
+    margin-right: 120px;
+    text-align: left;
+  }
+
+  .social-media-links {
+    display: block;
+  }
+
+  .subscribe-section {
+    margin-left: 80px;
+  }
+
+  .subscribe-items {
+    display: flex;
+    gap: 24px;
+  }
+}
+/* =============================END DESKTOP=============================== */
