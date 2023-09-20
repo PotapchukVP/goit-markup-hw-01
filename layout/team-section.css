@@ -60,7 +60,8 @@
   .our-team-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
   }
 }
 

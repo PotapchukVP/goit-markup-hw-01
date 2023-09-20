@@ -158,6 +158,11 @@
     margin-bottom: 72px;
   }
 
+  .footer-section .social-link-list {
+    gap: 16px;
+    margin-top: 0;
+  }
+
   .subscribe-section {
     display: block;
     text-align: center;
@@ -179,12 +184,13 @@
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-section .container {
     display: flex;
+    width: 584px;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    padding-left: 108px;
-    padding-right: 164px;
+    /* padding-left: 108px;
+    padding-right: 164px; */
   }
 
   .about-webstudio {

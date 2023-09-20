@@ -52,32 +52,37 @@
             </li>
           </ul>
         </address>
-        <button class="menu-button" type="button">
+
+        <button class="menu-button" type="button" id="open-menu-button">
           <svg class="menu-icon" width="24" height="24">
             <use href="./images/icons.svg#menu-icon"></use>
           </svg>
         </button>
-        <div class="modal-backdrop-background is-hidden">
-          <div class="modal-mobile-menu">
-            <button
-              class="close-button"
-              type="button"
-              aria-label="close-icon-button"
-            >
-              <svg class="close-icon" width="8px" heigh="8px">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-            <ul class="nav-link modal-nav-link">
-              <li>
-                <a href="./index.html" class="link current-link modal-link"
-                  >Studio</a
-                >
-              </li>
-              <li><a href="" class="link">Portfolio</a></li>
-              <li><a href="" class="link">Contacts</a></li>
-            </ul>
 
+        <!------------ please TAP the menu button ------------->
+        <div class="modal-backdrop-background" id="modal">
+          <button
+            id="close-menu-button"
+            class="close-button"
+            type="button"
+            aria-label="close-icon-button"
+          >
+            <svg class="close-icon" width="8px" heigh="8px">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="nav-link modal-nav-link">
+            <li>
+              <a href="./index.html" class="link current-link modal-link"
+                >Studio</a
+              >
+            </li>
+            <li><a href="" class="link">Portfolio</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+          </ul>
+
+          <div>
             <address class="nav-contacts modal-nav-contacts">
               <ul class="nav-contacts-list">
                 <li>
@@ -92,42 +97,40 @@
                 </li>
               </ul>
             </address>
-
-            <div class="social-media-links">
-              <ul class="social-link-list">
-                <li class="social-link-item">
-                  <a href="#" class="social-icon-background">
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-link-item">
-                  <a href="#" class="social-icon-background">
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-link-item">
-                  <a href="#" class="social-icon-background">
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-link-item">
-                  <a href="#" class="social-icon-background">
-                    <svg class="social-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-linkdn"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <ul class="social-link-lists">
+              <li class="social-link-item">
+                <a href="#" class="social-icon-background">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a href="#" class="social-icon-background">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a href="#" class="social-icon-background">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a href="#" class="social-icon-background">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkdn"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <script src="./js/script.js"></script>
     </header>
 
     <main>
@@ -408,6 +411,7 @@
             <li class="portfolio-card">
               <div class="description-item">
                 <img
+                  class="portfolio-card-img"
                   srcset="./images/bank.jpg 1x, ./images/bank@2x.jpg 2x"
                   src="./images/bank.jpg"
                   alt="Banking App"
@@ -428,6 +432,7 @@
             <li class="portfolio-card">
               <div class="description-item">
                 <img
+                  class="portfolio-card-img"
                   srcset="./images/cashless.jpg 1x, ./images/cashless@2x.jpg 2x"
                   src="./images/cashless.jpg"
                   alt="Cashless Payment"
@@ -448,6 +453,7 @@
             <li class="portfolio-card">
               <div class="description-item">
                 <img
+                  class="portfolio-card-img"
                   srcset="./images/app.jpg 1x, ./images/app@2x.jpg 2x"
                   src="./images/app.jpg"
                   alt="Meditation"
@@ -468,6 +474,7 @@
             <li class="portfolio-card">
               <div class="description-item">
                 <img
+                  class="portfolio-card-img"
                   srcset="./images/taxi.jpg 1x, ./images/taxi@2x.jpg 2x"
                   src="./images/taxi.jpg"
                   alt="Taxi Service"
@@ -488,6 +495,7 @@
             <li class="portfolio-card">
               <div class="description-item">
                 <img
+                  class="portfolio-card-img"
                   srcset="./images/screen.jpg 1x, ./images/screen@2x.jpg 2x"
                   src="./images/screen.jpg"
                   alt="Screen Illustrations"
@@ -508,6 +516,7 @@
             <li class="portfolio-card">
               <div class="description-item">
                 <img
+                  class="portfolio-card-img"
                   srcset="./images/course.jpg 1x, ./images/course@2x.jpg 2x"
                   src="./images/course.jpg"
                   alt="Online Courses"

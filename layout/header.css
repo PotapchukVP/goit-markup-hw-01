@@ -1,4 +1,14 @@
 /**********************************HEADER SECTION ******************************/
+/* #open-menu-button {
+  cursor: pointer;
+  background-color: red;
+}
+
+#open-menu-button:hover {
+  background-color: greenyellow;
+  transform: translateX(-50%);
+} */
+
 .border-header .container {
   display: flex;
   align-items: center;
@@ -123,38 +133,33 @@
 
   .modal-nav-contacts {
     display: flex;
-    margin-top: 168px;
   }
 
   .modal-backdrop-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    min-width: 320px;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1);
-    z-index: 99999999;
-    overflow: auto;
-    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  .modal-mobile-menu {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 320px;
     padding-top: 72px;
     padding-left: 16px;
     padding-right: 24px;
     padding-bottom: 40px;
 
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 99999999;
+    overflow: auto;
+    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .modal-backdrop-background .nav-contacts-list li:first-child a {
@@ -166,12 +171,18 @@
     gap: 24px;
   }
 
-  .social-media-links .social-link-list {
+  .social-link-lists {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
     margin-top: 48px;
+  }
+
+  .modal-backdrop-background .social-icon {
+    fill: #f4f4fd;
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -269,6 +280,7 @@
   .nav-contacts-list .contact-link {
     padding: 24px 0 24px 0;
     font-size: 16px;
+    font-weight: 400;
     line-height: calc(24 / 16);
   }
 

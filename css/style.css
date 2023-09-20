@@ -1,6 +1,6 @@
-/* * {
+* {
   outline: 1px solid greenyellow;
-} */
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -84,3 +84,8 @@ body {
 .social-icon-background:focus {
   background-color: #404bbf;
 }
+
+/* .social-media-links .social-link-list {
+  gap: 16px;
+  margin-top: 0;
+} */

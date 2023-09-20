@@ -61,6 +61,11 @@
 
 /* =============================START 320px============================== */
 @media screen and (max-width: 767px) {
+  .portfolio-card-img {
+    width: 288px;
+    height: auto;
+    overflow: hidden;
+  }
 }
 /* =============================END 320px================================ */
 
