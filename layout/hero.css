@@ -12,23 +12,10 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero-img-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office@2x.jpg);
-  }
 }
 
 .order-service-button {
@@ -76,6 +63,19 @@
     line-height: 1.1;
     text-transform: capitalize;
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-img-mobile@2x.jpg);
+    }
+  }
 }
 /* =============================END MOBILE================================ */
 
@@ -85,7 +85,14 @@
   .hero-section {
     width: 768px;
     padding: 112px 0 112px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-img-tablet.jpg);
   }
+
   .order-service-button {
     margin-top: 36px;
   }
@@ -94,6 +101,19 @@
     width: 496px;
     font-size: 56px;
     line-height: 1.07;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-img-tablet@2x.jpg);
+    }
   }
 }
 
@@ -104,6 +124,12 @@
   .hero-section {
     max-width: 1440px;
     padding: 188px 0 188px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-img-desktop.jpg);
   }
 
   .order-service-button {
@@ -114,6 +140,19 @@
     width: 496px;
     font-size: 56px;
     line-height: 1.07;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-img-desktop@2x.jpg);
+    }
   }
 }
 /* =============================END DESKTOP=============================== */
